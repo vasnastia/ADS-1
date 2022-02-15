@@ -6,10 +6,12 @@
 bool checkPrime(uint64_t value) {
 // вставьте код функции
   int value;
-  if (value >= 0)
-    return true
-  else
-    return false
+  for (int i = 2; i < sqrt(value); i++)
+  {
+    if (value % i == 0)
+      return false; 
+    return true;
+  }
 }
 
 uint64_t nPrime(uint64_t n) {
