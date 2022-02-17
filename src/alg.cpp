@@ -13,7 +13,7 @@ bool checkPrime(uint64_t value) {
   for (int i = 2; i * i <= value; i++) {
     if (value % i == 0) {
       return false;
-    }else{
+    } else {
       continue;
     }
   }
@@ -28,7 +28,7 @@ uint64_t nPrime(uint64_t n) {
     }
     if (count == n) {
       return i;
-    }else{
+    } else {
       continue;
     }
   }
